@@ -36,7 +36,7 @@ const handleGenerate = async () => {
   }
 
   try {
-    const res = await axios.get(`http://localhost:8000/get-npk-image/${crop}`, {
+    const res = await axios.get(`https://icrop-s1xc.onrender.com/get-npk-image/${crop}`, {
       params: {
         temp: parseFloat(temp),
         humidity: parseFloat(humidity),

@@ -41,7 +41,7 @@ export default function Predict() {
       const fd = new FormData();
       fd.append("file", image);
 
-      const response = await axios.post("http://localhost:8000/ocr", fd);
+      const response = await axios.post("https://icrop-s1xc.onrender.com/ocr", fd);
       const text = response.data.text || "";
       setOcrText(text);
 

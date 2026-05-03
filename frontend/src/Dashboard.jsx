@@ -15,7 +15,7 @@ export default function Dashboard() {
 
     const fetchUser = async () => {
       try {
-        const res = await axios.get(`http://127.0.0.1:8000/user/${email}`);
+        const res = await axios.get(`https://icrop-s1xc.onrender.com/user/${email}`);
         setUser(res.data);
       } catch (err) {
         console.log(err);
