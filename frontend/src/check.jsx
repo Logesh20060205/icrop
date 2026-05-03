@@ -46,7 +46,7 @@ const handleGenerate = async () => {
     });
 
     const imgPath = res.data.image;
-    setImage(`http://localhost:8000/${imgPath}?t=${new Date().getTime()}`);
+    setImage(`https://icrop-s1xc.onrender.com/${imgPath}?t=${new Date().getTime()}`);
     setFilename(imgPath.split('/').pop());
     setDecoded('');
   } catch (err) {
@@ -57,7 +57,7 @@ const handleGenerate = async () => {
 
   const handleDecode = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/decode/${filename}`);
+      const res = await axios.get(`https://icrop-s1xc.onrender.com/decode/${filename}`);
       const formatted = res.data.hidden_data.replace(/,/g, "\n");
       setDecoded(formatted);
     } catch (err) {
