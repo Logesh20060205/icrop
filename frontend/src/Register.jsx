@@ -38,7 +38,7 @@ export default function Register() {
     if (imageFile) fd.append('photo', imageFile);
 
     try {
-      await axios.post('https://icrop-s1xc.onrender.com/register', fd, {
+      await axios.post('http:/localhost:3000/register', fd, {
         headers: { "Content-Type": "multipart/form-data" }
       });
       setMessage(" Registered successfully!");
