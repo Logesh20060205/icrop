@@ -7,6 +7,8 @@ const multer = require('multer');
 const {mongoDB}=require("../backend/config/db.js");
 const {User}=require("./models/user.model.js");
 const app = express();
+const dotenv=require("dotenv");
+dotenv.config();
 app.use(cors(
   {
     origin:"*"
@@ -91,7 +93,7 @@ app.post('/upload/image', upload.single('image'), (req, res) => {
 });
 
 
-app.listen(8000,()=>{
+app.listen(process.env.PORT,()=>{
   mongoDB();
   console.log("Server running on port 8000");
 
