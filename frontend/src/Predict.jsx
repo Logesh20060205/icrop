@@ -88,7 +88,7 @@ export default function Predict() {
         Object.entries(soil).map(([k, v]) => [k, Number(v)])
       );
 
-      const res = await axios.post('http://localhost:8000/upload/data', formattedSoil);
+      const res = await axios.post('https://icrop-s1xc.onrender.com/upload/data', formattedSoil);
 
       setCrop(res.data.prediction);
 

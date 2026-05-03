@@ -34,7 +34,7 @@ export default function Dashboard() {
   const saveUser = async () => {
     try {
       const response = await axios.post(
-  "http://192.168.244.73:8000/login",
+  "https://icrop-s1xc.onrender.com/login",
         user
       );
       setUser(res.data);
