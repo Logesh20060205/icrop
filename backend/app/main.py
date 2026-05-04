@@ -28,7 +28,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-client = MongoClient("mongodb+srv://logeshnathan2006_db_user:logi@cluster0.rja8esy.mongodb.net/icrop_db?appName=Cluster0")
+MONGODB_URL = os.environ.get("MONGODB_URL", "mongodb://localhost:27017/")
+client = MongoClient(MONGODB_URL)
 db = client["icrop_db"]
 users = db["users"]
 datasets = db["datasets"]
