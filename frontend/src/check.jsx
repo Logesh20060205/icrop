@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import axios from 'axios';
 import {
   Container,
@@ -87,7 +87,7 @@ const handleGenerate = async () => {
               />
             </Grid>
             <Grid item xs={6}>
-              <TextField name="temp" label="Temp (°C)" fullWidth onChange={handleChange} />
+              <TextField name="temp" label="Temp (Â°C)" fullWidth onChange={handleChange} />
             </Grid>
             <Grid item xs={6}>
               <TextField name="humidity" label="Humidity (%)" fullWidth onChange={handleChange} />

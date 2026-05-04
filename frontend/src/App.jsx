@@ -1,10 +1,10 @@
-import React from 'react';
+﻿import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Register from './Register';
 import Dashboard from './Dashboard';
 import Login from './Login';
 import Home from './Home';
-import Check from './Check'; // ✅ FIXED
+import Check from './Check'; // âœ… FIXED
 import Predict from './Predict';
 
 function App() {

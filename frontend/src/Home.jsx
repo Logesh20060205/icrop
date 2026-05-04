@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div style={styles.container}>
       <div style={styles.card}>
-        <h1 style={styles.title}>🌾 Smart Agriculture</h1>
+        <h1 style={styles.title}>ðŸŒ¾ Smart Agriculture</h1>
         <p style={styles.subtitle}>Choose an option below</p>
 
         <button style={styles.button} onClick={() => navigate('/predict')}>
