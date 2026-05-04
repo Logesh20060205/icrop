@@ -7,9 +7,9 @@ scikit-learn
 xgboost
 joblib
 pandas
-pymongo
+pymongo[srv]
 python-dotenv
-easyocr
-python-jose
 pyjwt
 cryptography
+python-jose
+passlib[bcrypt]
