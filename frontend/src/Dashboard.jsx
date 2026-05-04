@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 export default function Dashboard() {
@@ -54,7 +54,7 @@ export default function Dashboard() {
     <div style={styles.page}>
       <div style={styles.card}>
         
-        <h2 style={styles.title}>👤 User Dashboard</h2>
+        <h2 style={styles.title}>ðŸ‘¤ User Dashboard</h2>
 
         {/*  UPDATED AVATAR */}
         {user.photo ? (

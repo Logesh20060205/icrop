@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import axios from 'axios';
 import {
   Container,
@@ -38,7 +38,7 @@ export default function Register() {
     if (imageFile) fd.append('photo', imageFile);
 
     try {
-      await axios.post('http:/localhost:3000/register', fd, {
+      await axios.post('https://icrop-s1xc.onrender.com/register', fd, {
         headers: { "Content-Type": "multipart/form-data" }
       });
       setMessage(" Registered successfully!");

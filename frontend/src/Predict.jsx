@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import axios from 'axios';
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Legend
@@ -159,7 +159,7 @@ export default function Predict() {
 
       {crop && (
         <div style={{marginTop: '20px'}}>
-          <h3>🌾 Recommended Crop:</h3>
+          <h3>ðŸŒ¾ Recommended Crop:</h3>
           <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#2e7d32' }}>{crop}</p>
         </div>
       )}
