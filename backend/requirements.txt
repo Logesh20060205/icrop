@@ -1,1 +1,15 @@
-﻿fastapiuvicorn[standard]python-multipartpillownumpyscikit-learnxgboostjoblibpandaspymongo[srv]python-dotenvpyjwtcryptographypython-josepasslib[bcrypt]
+fastapi
+uvicorn[standard]
+python-multipart
+pillow
+numpy
+scikit-learn
+xgboost
+joblib
+pandas
+pymongo[srv]
+python-dotenv
+pyjwt
+cryptography
+python-jose
+passlib[bcrypt]
